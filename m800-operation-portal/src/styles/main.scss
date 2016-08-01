@@ -1,0 +1,69 @@
+$app: 'op' !default;
+
+$global-spacing: 16px;
+$inuit-base-line-height: $global-spacing;
+$breakpoint-classes: (small);
+$body-background: transparent;
+
+
+// Import foundation util for unit and breakpoint
+@import 'foundation-sites/scss/util/util';
+
+// Settings: Global variables, site-wide settings, config switches, etc.
+@import 'inuit-defaults/settings.defaults';
+@import 'm800-web-styleguide/scss/settings.global';
+@import 'm800-web-styleguide/scss/settings.foundation';
+
+@import 'setting.global';
+@import 'setting.foundation';
+
+// Tools: Site-wide mixins and functions.
+@import 'inuit-functions/tools.functions';
+@import 'm800-web-styleguide/scss/tools.mixins';
+@import 'm800-web-styleguide/scss/tools.animate';
+@import 'm800-web-styleguide/scss/tools.text';
+
+// Generic: Low-specificity, far-reaching rulesets (e.g. resets).
+@import 'foundation-sites/scss/global';
+@include foundation-global-styles;
+
+@import 'foundation-sites/scss/typography/base';
+@include foundation-typography-base;
+@import "m800-web-styleguide/scss/base.page";
+@import "m800-web-styleguide/scss/base.type";
+@import "m800-web-styleguide/scss/base.form";
+
+@import "m800-web-styleguide/scss/objects.flex-grid";
+
+// Components
+@import 'm800-web-styleguide/scss/components.buttons';
+@import 'react-select/dist/react-select';
+
+
+@import 'foundation-sites/scss/components/top-bar';
+@import 'foundation-sites/scss/components/menu';
+@import 'foundation-sites/scss/components/table';
+@import 'foundation-sites/scss/components/tabs';
+@import 'foundation-sites/scss/typography/base';
+
+
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-top-bar;
+@include foundation-menu;
+
+@import './components.nav';
+@import './components.operation-panel';
+@import './components.listen-points';
+@import './components.table';
+@import './components.node-detail';
+@import './components.node-list';
+@import './components.view-page';
+@import './components.attributes';
+@import './components.select'
+
+
+
+
+
+

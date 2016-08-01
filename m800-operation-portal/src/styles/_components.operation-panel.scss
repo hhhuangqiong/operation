@@ -1,0 +1,23 @@
+.operation-panel{
+  border-bottom: 1px solid gray;
+  padding: 1%;
+
+}
+.panel-attributes-partitions {
+  height: 200px;
+  .panel-attributes, .panel-partitions {
+    float: left;
+    overflow: auto;
+    height: 170px;
+  }
+  .panel-attributes {
+    margin-right: 2%;
+    width: 48%;
+  }
+  .panel-partitions {
+    width: 50%;
+  }
+}
+.panel-tab {
+  border-bottom: none;
+}
